@@ -1,0 +1,13 @@
+TIPOS DE DATOS
+
+PRIMITIVOS: 
+string: cadenas de texto "" ó '' 
+number:cualquier tipo de numero
+underdifined:variable sin valor 
+boolean: true o flase
+null:
+
+OBJETOS: 
+object:
+array:
+function:
