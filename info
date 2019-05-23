@@ -8,6 +8,33 @@ boolean: true o flase
 null:
 
 OBJETOS: 
-object:
-array:
+object: {}
+array: []
 function:
+
+VARIABLES: los nombre de variable pueden arrancar con _ $ ó cualquier letra
+var:
+let:
+const:
+
+let nombre = "Florencia"
+
+console.log(X) -> Nos muestra en consola lo que valga X.
+
+"" -> hago un espacio
+
+console.table -> forma de ver los arrays
+
+= para el valor
+: para la propiedad
+
+javascript definitive guide
+
+ESTRUCTURAS DE CONTROL
+Condicionales-bucles
+
+For: sirve para iterar(alternar) sobre matrices indexadas secuenciales
+
+For In: sirve para alternar matrices indexadas asociativas (objetos)
+
+prop es como i del for
