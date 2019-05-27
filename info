@@ -38,3 +38,56 @@ For: sirve para iterar(alternar) sobre matrices indexadas secuenciales
 For In: sirve para alternar matrices indexadas asociativas (objetos)
 
 prop es como i del for
+
+MOTOR DE JAVA SCRIPT
+V8 = JS Engine
+Carga WEB APIs 
+Objeto Global = window -> BOM (Browser Objet Model) representacion del navegador
+declaro la variable y una vez asi aparece en todas (creo)
+
+window.innerHeight -> number - El alto en px del documento
+window.innerWidth -> number - El ancho en px del documento
+(No hace falta poner el window si no que por default ya se entiende)
+
+outerHeight-> number - El alto en px del navegador
+outerWidth-> number - El ancho en px del navegador
+console-> Objet - Nos da funciones de logueo en consola de desarrollo
+location -> Objet - Tiene propiedades que controlan la ubicacion de un usuario.
+location.href-> string - Mapea a la barra de direcciones
+history.back()-> Retrocede un nivel en el historial
+history.forward()-> Avanza un nivel en el historial
+
+Propiedad document = es una API Web -> DOM = document object model. (etiquetas del html)
+console.dir(X)-> Veo de forma completa el HTML. muestra en formato JSON
+
+JSON = javascript Objet notation
+
+console.clear()-> limpia la consola.
+
+FUNCIONES DE DOCUMENT 
+
+Seleccion de nodos
+
+VIEJAS
+document.getElementById(X) -> Dom Element
+document.getElementByClassName(X) -> Array
+document.getElementByTagName(X) -> Array
+
+NUEVAS
+document.querySelctor(X)-> DOMElement - Busca la primera instancia del selector X
+document.querySelectorAll(X)-> Array - Busca todas las instancias del selector X
+ 
+ (emmet cheat sheet)
+
+ puedo modificar sus clases (solo la que yo quiero)
+
+ Con query selector llamo al elemento por su nombre ya sea ID, CLASS y ETIQUETA. (selector de CSS)
+ Para modificar tengo todos tengo que usar un FOR
+
+ COMO CREAR UN NODO 
+ let x = document.createElement("x")
+
+ AGREGAR NODOS AL DOM
+
+ Nodo.appenChild(NodoNuevo) -> inserta el NodoNuevo como ultimo hijo de Nodo
+ Nodo.insertBefore(NodoNuevo,NodoRef) -> inserta el nodo nuevo antes de NodoRerf
