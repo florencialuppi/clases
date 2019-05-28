@@ -1,73 +1,42 @@
-let nombre = "Florencia"
-let apellido = "Luppi"
-let nombre_completo = nombre + "" + apellido
+let btn = document.querySelector("button")
 
-let numeros = [10,14,20,25,"Flor",true]
-numeros.push("Hola")
-numeros.push(45)
+//EVENTO: Ejecucion  de una funcion (callback)como respuesta una accion
 
-let persona = {
-    nombre : "Florencia",
-    edad: 21,
-    vive : true
+//window.hacerClick = function(){} ->otra forma de escribirlo
+function hacerClick (){
+    console.log("Click")
 }
 
-//persona.trabaja = false
-//persona.tienePerrito = 2
-//console.log(persona)
+//Sintaxis de eventos -> Nodo.addEventListener(evento,callback)
 
-for(let i=0; i<numeros.length ; i++){
-    console.log(numeros[i])
-}
+//btn.addEventListener("click",hacerClick)
 
-for (prop in persona){
-    //console.log(persona[prop])
-}
+/*
+reemplazar el código de la funcion  hacer click:
 
-/*let dos = document.getElementById("item2")
-dos.innerText = "Hello"
-let items = document.getElementsByClassName("item")
-let lis = document.getElementsByTagName("li")
+1)Crear un boton por cada click que se haga
+2)Cada boton nuevo se tiene que ver en el DOM
+3)Cada boton nuevo tiene que tener un callback en su propio evento click tambien
+4)Todos los botones en pantalla tienen que tener como texto "boton N", donde N es un
+numero arrancando de 1 el cual se va aumentando de a una unidad.
 */
-//console.dir(items)
 
-/* let dos = document.querySelector("#item2")
-let items = document.querySelector(".item")
-let lis = document.querySelectorAll("li")
-console.dir(lis) */
+let contador = 1
 
-//CREAR NODOS
-let p = document.createElement("p")
-p.innerText = "Nuevo Texto"
-p.id = "nuevo"
-p.className = "item"
+function clickhace(){
 
+    let btn2 = document.createElement("button")
+    btn2.innerText = "Boton" + contador
+    let body = document.querySelector("body")
+    body.appendChild(btn2)
+    contador = contador + 1
+    btn2.addEventListener("click", funcionParaTodosBtn)
+    
+}
+btn.addEventListener("click", clickhace)
 
-//AGREGAR NODOS AL DOM
-let body = document.querySelector("body")
-body.appendChild(p)
-
-/* 1)Crear un elemento <li> y ponerle un texto
-   2)Meterlo como primer item del <ul>
-
-EXTRA
-1) Crear un elemento <ul> nuevo y vacio
-2) Hacer un bucle de 5 iteraciones
-3) Por iteracion de ciclo se tiene que crear un <li> nuevo
-4) Agregar todos los <li> al <ul> del punto 1
-5)Agregar el <ul> del punto 1 al DOM*/
-
-let liNuevo = document.createElement("li")
-liNuevo.innerText = "Lista1"
-let ul = document.querySelector("ul")
-let primer_li = document.querySelector("#item1")
-ul.insertBefore(liNuevo,primer_li)
-
-let nuevo_ul = document.createElement("ul")
-for (let i=0; i<5 ;i++){
-    let NuevoLi = document.createElement("li")
-    NuevoLi.innerText = "Nuevo Texto" + i
-    nuevo_ul.appendChild(NuevoLi)
+function funcionParaTodosBtn (){
+    console.log("Click en los botones")
 }
 
-body.appendChild(nuevo_ul)
+//Para el punto 3 tengo que meter el evento en la primera function

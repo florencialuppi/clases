@@ -91,3 +91,8 @@ document.querySelectorAll(X)-> Array - Busca todas las instancias del selector X
 
  Nodo.appenChild(NodoNuevo) -> inserta el NodoNuevo como ultimo hijo de Nodo
  Nodo.insertBefore(NodoNuevo,NodoRef) -> inserta el nodo nuevo antes de NodoRerf
+ Los obejtos pasan por referencia y los primitivos por valor
+
+ SINTAXIS DE EVENTO
+ 
+ 
