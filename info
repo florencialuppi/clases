@@ -95,4 +95,15 @@ document.querySelectorAll(X)-> Array - Busca todas las instancias del selector X
 
  SINTAXIS DE EVENTO
  
- 
+OBJETO EVENTO
+es un objeto que te llega como primer parametro de cualquier funcion (callback) registrada en un EVENTO
+
+function borrarElemento (e){
+    document.body.removeChild(e.target.parentNode)
+}
+
+Los target son independientes uno del otro.
+
+Event.target: es una referencia al nodo que acaba de disparar el evento 
+
+Nodo.parentNode: es una refencia al nodo padre.
