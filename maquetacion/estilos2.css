@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 200px;
+    background-color: #ff5959;
+}
+
+a , h1{
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+#banner{
+    height: 350px;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+}
+
+#banner > div{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+#banner > div h2{
+    color: #ff5959;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+#servicios{
+    background-color: #E7E8E7;
+    text-align: center;
+    padding: 16px;
+    height: 350px;
+}
+
+#servicios > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#servicios1{
+    align-items: center;
+    width: 500px;
+    margin-left: 110px;
+    padding: 16px;
+}
+
+
+#servicios2{
+    align-items: center;
+    width: 500px;
+}
+
+#servicios3{
+    align-items: center;
+    width: 500px;
+    margin-right: 110px;
+}
+
+.servicios , img{
+    width: 100px;
+    height: 100px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servicios , p{
+    padding: 16px;
+}
